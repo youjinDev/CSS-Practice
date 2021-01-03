@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: aqua;
+
+        }
+
+        .box1:hover {
+            background-color: blue;
+            transition: background-color 300ms linear;
+        }
+
+        .box2:hover {
+            background-color: blue;
+            border-radius: 50%;
+            transition: all 2s ease;
+        }
+
+        .box3:hover{
+            background-color: blue;
+            transform: translateX(400px);
+            transition: all 2s cubic-bezier(0.47, 0, 1, -0.06);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>Basic Transition Practice</h3>
+    <div class="box box1">
+    </div>
+
+    <h3>Hover with transition ease</h3>
+    <div class="box box2">
+    </div>
+
+    <h3>Hover with cubic-bezier</h3>
+    <div class="box box3">
+    </div>
+</body>
+</html>
